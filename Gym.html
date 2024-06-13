@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership</title>
+</head>
+<body>
+    <h1>Gym Membership</h1>
+
+    
+    <h2>Add/Update Membership</h2>
+    <form id="membershipForm">
+        <label for="id">ID (for update only):</label>
+        <input type="text" id="id" name="id"><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required><br>
+        <label for="start">Start Date:</label>
+        <input type="date" id="start" name="start" required><br>
+        <label for="end">End Date:</label>
+        <input type="date" id="end" name="end" required><br>
+        <label for="subscription">Subscription Type:</label>
+        <select id="subscription" name="subscription" required>
+            <option value="basic">Basic</option>
+            <option value="premium">Premium</option>
+        </select><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    
+
+    <h2>Delete Membership</h2>
+    <form id="deleteForm">
+        <label for="deleteId">ID:</label>
+        <input type="text" id="deleteId" name="deleteId" required><br>
+        <button type="submit">Delete</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
